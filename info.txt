@@ -1,0 +1,114 @@
+#Part - 1 || Road Map - Flutter MVVM architecture With Rest Apis using Provider With Solid Priniciples
+
+*1. project create -> directory(folders) create ->
+    1. networking folder , data folder 
+    2. models folder 
+    3. directory, view, utilities, components
+*2. Exception handle , mvvm implement using rest api with provider
+*3. application make using api->
+    1. login api , sign api , 
+    2. user session manage (share preference) , Manage them
+    3. Api Exception    
+       1. dyanamic class create (using solid principle) (one function and modifiable)
+       2. network 
+          1. api reated info , intigrate , hit , send request , get response
+          2. error message , exception handle ,
+          3. abstract class use with generic method define api ko hit krne ke liye 
+          4. different type of end point of , get , post, put , delete api 
+*4. Define a Route (different screen navigate) 
+       1. navigator methods (class in routes modifiable, one class, on functionality)
+       2. switch statement through route class name from route get 
+       3. switch statement with check route according that screen on navigate 
+       
+*5. Utility manage them  (globaly manage)
+*6. Resource (components create them)  
+     1. components design them 
+     2. error message design them
+*7  use in 
+     1. login screen design
+     2. login view design  with repository design 
+     3. repository (data layer connection with network , network link with apis, result return ) 
+     4. sinup inetrate 
+     5. user session manage them 
+     6. get apis using mvvm with provider utilise them 
+
+#Part - 2 what is mvvm architecture - flutter mvvm architecture with rest apis using provider 
+ 
+       (-> Data Request) || (<- Data)
+1* view (activity, fragment) -> viewModel -> Domin(use caces) -> Data Repository -> local data source (room, sqlite),
+                                                                                      -> remote data source (server,firebase)
+2* view (activity, fragment) <- viewModel <- Domin(use caces) <- Data Repository <- local data source (room, sqlite),
+                                                                                      <- remote data source (server,firebase)
+3* mmv use:-
+   * solid principal implement 
+   * clean code 
+   * code modifiable 
+   * application performace maintain krna 
+   
+#Part- 3 Handle App Exceptions Flutter mvvm architecture with rest apis using provider
+   1* data = Network related things manage, server on request (data fetch or get) getter setter , get request (network in              manage) post method write.
+   2* resouce = colors , constent value , components , url 
+   3* respository = backend locgic (connection with network together link with each other ), then response goes to view model
+   4* utils = which things we use repeatly 
+   5* view = design (face) implement (not logic implement)
+   6* view_model = logic implement  
+   
+    # Handle App Exceptions 
+      1* FetchDataException
+      2* BadRequestException
+      3* UnauthorisedException
+
+#Part- 4 Handle App Apis Response - Flutter Mvvm Architecture With Rest Apis Using Provider 
+         1* ApiResponse class
+         2* Status enum create 	 	
+
+#Part-5 Network Apis Services- Flutter MVVM Architecture With Res APIs Using Provider 
+        1* BaseApiServices -> abstract class (GetApiResponse, PostApiResponse) defines
+        2* NetworkApi -> (GetApiResponse, PostApiResponse) use them
+
+#Part-6 Named Routes - Flutter MVVM Architecture with Rest Apis Using Provider 
+        1* RoutesName
+        2* Routes 
+
+#Part-7 Utils - Flutter MVVM Architecture with Rest APIs Using Provider 
+        Utils Class make 
+        1. toastMessage
+        2. flushBarErrorMessage
+        3. snackBar
+
+#Part-8 Login Veiw & View Model - Flutter MVVM  Architecture With Rest APIs Using         Provider
+        1. make textfeilds 
+        2. components in button create 
+        3. resources in color class create 
+        4. utils class in field focus change make 
+
+#Part-9 Login View & View Model - Flutter MVVM Architecture With Rest Apis Using Provider
+        1. auth_repository create -> baseServices initilize them and assign networkApiServices   
+        2. authViewModel -> loginApi Fuction
+
+#Part-10 Sign Up View & View Model - Flutter MVVM Architecture with Rest Apis Using Provider 
+        1. signview -> signview model call 
+        2. auth repository -> baseApiService class import and provide network api Service
+        3. baseApiService is abstract class in get , post method define 
+        4. networkapi Service in  get , post method code 
+
+#Part-11 Manage User Sesssion - Flutter MVVM Architecture with Rest Apis Using Provider 
+        1. splash view -> splash services intilize
+        2. splash services -> create userviewModel getter method  
+        3. userViewModel -> save user and pass user model
+
+#Part-12 Get Apis - Flutter MVVM Architecture With Rest Apis Using Provider 
+        1. HomeRepository in NetworkApiServices 
+        2. HomeViewModel three type response    
+        
+#12 Dart OOP Car Rental Calculator Project || Dart OOP Tutorials For Beginners in Hindi/ Urdu 
+
+#13 Abstraction in Dart OOP || Dart OOP  Tutorials for beginners in Hindi / Urdu 
+
+#13-1 Abstraction in Dart OOP || Dart OOP  Tutorials for beginners in Hindi / Urdu
+
+       
+        
+     
+
+       
